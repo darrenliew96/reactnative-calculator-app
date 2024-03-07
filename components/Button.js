@@ -8,13 +8,14 @@ export default function Button({ title, onPress, color }) {
         flex: 1,
         paddingVertical: 30,
         backgroundColor: color,
-        borderRadius: 100,
+        borderRadius: 25,
         margin: 5,
+        marginVertical: -40,
         alignItems: "center",
       }}
       onPress={onPress}
     >
-      <Text style={{ color: "#fff", fontSize: 20 }}>{title}</Text>
+      <Text style={{ color: "#fff", fontSize: 30 }}>{title}</Text>
     </TouchableOpacity>
   );
 }

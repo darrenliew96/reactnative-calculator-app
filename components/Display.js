@@ -10,6 +10,7 @@ export default function Display(){
 
 const styles = StyleSheet.create({
     display: {
+        
         justifyContent: "flex-start",
         alignItems: "flex-start",
         backgroundColor: "#202020",
