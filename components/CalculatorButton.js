@@ -1,7 +1,8 @@
 import { TouchableOpacity } from "react-native";
 import { Text } from "react-native";
+import { handleButtonPress } from "../utils/ButtonLogics";
 
-export default function Button({ title, onPress, color }) {
+export default function CalculatorButton({ title, onPress, color }) {
   return (
     <TouchableOpacity
       style={{
@@ -13,7 +14,7 @@ export default function Button({ title, onPress, color }) {
         marginVertical: -40,
         alignItems: "center",
       }}
-      onPress={onPress}
+      onPress={()=>handleButtonPress(title)}
     >
       <Text style={{ color: "#fff", fontSize: 30 }}>{title}</Text>
     </TouchableOpacity>
